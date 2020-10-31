@@ -100,6 +100,15 @@ body {
   /* 10px * 1.6 = 16px */
   font-family: 'Montserrat', sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens - adaptive styles bofore 1200px */
 /* Medium Devices, Desktops - adaptive styles bofore 992px */
@@ -349,6 +358,7 @@ body {
 }
 .intro__calc-name {
   color: #fff;
+  margin-bottom: 35px;
 }
 .intro__forma {
   display: flex;
@@ -379,4 +389,59 @@ body {
 }
 .intro-wrapper {
   height: 650px;
+}
+.benefit {
+  padding-top: 70px;
+}
+.benefit__title {
+  font-size: 34px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.benefit__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.benefit__list-left {
+  display: flex;
+  justify-content: space-around;
+  width: 760px;
+  flex-wrap: wrap;
+  margin-top: 77px;
+}
+.benefit__list-right {
+  width: 29%;
+  margin-right: 57px;
+}
+.benefit__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+  min-height: 250px;
+  text-align: center;
+  background-color: #27af3c;
+  border: 2px solid #64d8ff;
+  padding: 20px 17px 30px;
+  border-radius: 20px;
+}
+.benefit__item-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.benefit__item-text {
+  padding: 0;
+  padding-top: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+.benefit__item-sum {
+  font-size: 77px;
+  color: #fff;
+  font-weight: 700;
+}
+.benefit__item-color {
+  background-color: #ff6f02;
 }
