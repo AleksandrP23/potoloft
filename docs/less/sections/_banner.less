@@ -10,6 +10,10 @@
   &__text {
     color: #fff;
     font-size: 22px;
+
+    @media (max-width:768px) {
+      font-size: 16px;
+    }
   }
 
   &__forma {
@@ -29,7 +33,9 @@
   }
 
   &__forma-input {
-    width: 220px;
+    max-width: 220px;
+    width: 100%;
+    padding: 5px;
   }
 
   &__forma-text {
@@ -51,16 +57,27 @@
 .banner-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width:992px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .banner-left {
-  width: 500px;
+  width: 50%;
+
+  @media (max-width:992px) {
+    max-width: 500px;
+    width: 100%;
+  }
 }
 
 .banner-right {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  max-width: 450px;
+  width: 100%;
   background-color: rgba(255, 111, 2, 0.7);
   border: 2px solid #64d8ff;
   padding: 5px 50px 30px;
